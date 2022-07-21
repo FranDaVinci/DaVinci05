@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario salarial</title>
+    <style>
+
+        .datos_personales{
+            color:rgb(8, 8, 83);
+            font-size: 14pt;
+            font-weight: bold;
+        }
+        
+        /*
+        table, tr,td,th{
+            border: 1px solid black;
+        }*/
+    </style>
+</head>
+<body>
+    <form name="form1" action="salario.php" method="POST">
+        <fieldset>
+            <legend>Datos personales</legend>
+            
+                     <p class="datos_personales">Nombre: 
+                        <input type="text" name="nombre"></p>   
+                    
+                        <p class="datos_personales">Apellidos: 
+                        <input type="text" name="apellidos" size="50"></p>
+                   
+                       <p class="datos_personales">DNI: 
+                        <input type="text" name="dni"></p> 
+                   
+                        <p class="datos_personales">Dirección: 
+                        <input type="text" name="direccion" size="50"></p>
+                    
+                        <p class="datos_personales">Estado civil:
+                            <br>
+                            <input  type="radio"  name="estado" value="casado/a">Casado/a
+                            <input  type="radio"  name="estado" value="soltero/a">Soltero/a
+                            <input  type="radio"  name="estado" value="viudo/a">viudo/a
+                        </p>
+                   
+                        <p class="datos_personales">Número de hijos:
+                            <br>
+                            <select name="hijos">
+                                <option name="hijos" value="0" selected>Ninguno</option>
+                                <option name="hijos" value="Menos de 3">Menos de 3</option>
+                                <option name="hijos" value="Más de 3">Más de 3</option>
+                            </select>    
+                        </p>
+                        <p>
+                        <input type="checkbox" name="jubilado" value="si"> Marque esta casilla si se encuentra en situación de jubilación
+                        </p>
+                        <p class="datos_personales">Salario: 
+                            <input type="text" name="salario">€</p> 
+
+                        <input type="submit" value="Enviar">
+                    
+        </fieldset>
+    </form>
+</body>
+</html>

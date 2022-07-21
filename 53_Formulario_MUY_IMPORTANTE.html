@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="53_FORMulario_IMportante.php" method="get"> 
+        Introduce tu nombre: <input name="nombre" type="text"> 
+        <br />
+        Y tu contraseña: <input name="clave" type="password"> 
+        <br />
+        Prefieres que te diga...
+        <br />
+        <input name="saludo" value="hola"checked="checked" type="radio">Hola
+        <br /> 
+        <input name="saludo" value="adios" type="radio">Adios
+        <br /> 
+        Opcion extra: 
+        <select name="posibilidad" size="1">
+           <option value="opcion_1">Primera posibilidad </option>
+           <option value="opcion_2">Segunda posibilidad </option>
+           <option value="opcion_3">Tercera posibilidad </option>
+        </select> 
+        <br />
+        Comentario: 
+        <br />
+        <textarea rows="10" name="texto" cols="40"></textarea>
+        <br />
+        <input value="Enviar" type="submit"><br />
+    </form>
+    
+</body>
+</html>

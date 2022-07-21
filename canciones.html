@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Validacion de Formulario Examen Final Francisco Ramírez</title>
+    <style>
+        .valida1 {
+            color: blue;
+        }
+        .field {
+            border-color: blue;
+            border-style: dotted;
+        }
+        .texto {
+            margin-left: 210px;
+        }
+        .gen {
+            margin-left: 200px;
+        }
+        .rad {
+            margin-left: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="valida1">Validación de formulario</h1>
+    <h2><i>Búsqueda de canciones</i></h2>
+    <form action="canciones.php" method="post">
+        <fieldset class="field">
+            <b>Texto a buscar:</b>
+            <input class="texto" type="text" name="texto" size="50">
+            <br><br>            
+                <b>Buscar en:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="busca" id="" value="Título de canción">Título de canción 
+                <input type="radio" name="busca" id="" value="Nombre de álbum">Nombres de álbum 
+                <input type="radio" name="busca" id="" value="Ambos campos">Ambos campos 
+            <br><br>
+            <b>Género musical:</b>
+            <select class="gen" name="genero" id="">
+                <option name="genero" value="todos" selected>Todos</option>
+                <option name="genero" value="Acústica">Acústica</option>
+                <option name="genero" value="Banda Sonora">Banda Sonora</option>
+                <option name="genero" value="Blues">Blues</option>
+                <option name="genero" value="Electrónica">Electrónica</option>
+                <option name="genero" value="Folk">Folk</option>
+                <option name="genero" value="Jazz">Jazz</option>
+                <option name="genero" value="New Age">New Age</option>
+                <option name="genero" value="Pop">Pop</option>
+                <option name="genero" value="Rock">Rock</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Buscar">
+        </fieldset>
+    </form>
+
+
+  
+    
+</body>
+</html>

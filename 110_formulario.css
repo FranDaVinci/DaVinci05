@@ -1,0 +1,11 @@
+body {
+    background-color: lightcyan;
+}
+.form1 {
+    background-color: lightblue;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 30px;
+    border: solid blue;
+
+}

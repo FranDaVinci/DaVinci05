@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="59_CalculoIVA.php" method="get">
+        <fieldset><legend>PRODUCTOS</legend>
+            <select name="primer" id="">
+                <option value="" selected disabled>-------</option>
+                <option value="16">Lomo</option>
+                <option value="22">Ternera</option>
+                <option value="14">Pollo</option>
+                <option value="31">Presa Ibérica</option>
+            </select>
+            <select name="segun" id="">
+                <option value="" selected disabled>-------</option>
+                <option value="8">Ensalada</option>
+                <option value="9">Entrantes Variados</option>
+                <option value="12">Jamón Ibérico</option>
+                <option value="14">Gambas</option>
+            </select>
+            <select name="postre" id="">
+                <option value="" selected disabled>-------</option>
+                <option value="4">Flan</option>
+                <option value="4">Helado</option>
+                <option value="6">Arroz con Leche</option>
+                <option value="8">Tarta de Queso</option>
+            </select>
+        </fieldset>
+        <br>
+        Observaciones:
+        <br>
+        <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Calcular">
+        <input type="reset" value="Borrar">
+    </form>
+    
+</body>
+</html>

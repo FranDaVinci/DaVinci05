@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="87_Formulario_MAS_IMPORTANTE_Enviar_mail.php" method="get">
+        Escriba su nombre: <input type="text" name="nombre">
+        <br>
+        Escriba sus apellidos: <input type="text" name="apellidos" id="">
+        <br>
+        Escriba su email: <input type="email" name="email1">
+        <br>
+        Repita su e-mail: <input type="text" name="email2">
+        <br>
+        Escriba su contraseña: <input type="password" name="contra1" id="">
+        <br>
+        Repita su contraseña: <input type="password" name="contra2" id="">
+        <br>
+        Pasó algo con su pedido:
+        <br>
+        <select name="referente" id="">
+            <option value="" selected disabled>----</option>
+            <option value="Estropeado">Estropeado</option>
+            <option value="Fallo_De_Fabricacion">Fallo de Fabricacion</option>
+            <option value="Mal_envio">Mal envio</option>
+        </select>
+        <br>
+        Natación<input type="checkbox" name="aficion[]" id="" value="Natacion">
+        Buceo<input type="checkbox" name="aficion[]" id="" value="Buceo">
+        Fútbol<input type="checkbox" name="aficion[]" id="" value="Futbol">
+        Baloncesto<input type="checkbox" name="aficion[]" id="" value="Baloncesto">
+        <br>
+        Escriba como nos conoció: <input type="text" name="conocio">
+        <br>
+        <textarea name="consulta" id="" cols="30" rows="10">Escriba su consulta</textarea>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>

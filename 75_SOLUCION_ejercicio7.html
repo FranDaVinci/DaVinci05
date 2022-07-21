@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 7</title>
+</head>
+<body>
+    <!-- 7.	Crea una página con un formulario, que pida al usuario dos números y que permita escoger la operación a realizar (suma, resta, multiplicación o división), y calcule y muestre su resultado. Para escoger la operación puedes usar un "select" o "radio 20 buttons" -->
+    <form action="ejercicio7.php" method="post">
+        <label for="n1">Primer número</label>
+        <input type="number" name="n1">
+        <br>
+        <label for="n2">Segundo número</label>
+        <input type="number" name="n2">
+        <br>
+        <label for="operacion">¿Que operacion quieres realizar?</label>
+        <select name="operacion">
+            <option value="+">Sumar</option>
+            <option value="-">Restar</option>
+            <option value="*">Producto</option>
+            <option value="/">División</option>
+        </select><br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
